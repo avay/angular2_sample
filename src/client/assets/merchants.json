@@ -1,0 +1,20 @@
+{
+	"merchants":[
+		{"mid":"100","dbaName":"ABC","legalName":"ABCD Ltd"},
+		{"mid":"200","dbaName":"CDE","legalName":"CED Ltd"},
+		{"mid":"300","dbaName":"ABC","legalName":"ABCD Ltd"},
+		{"mid":"400","dbaName":"CDE","legalName":"CED Ltd"}
+	],
+	"pageDetail":{
+		"pageSize":10,
+		"pageNo":1,
+		"sortBy":"MID",
+		"sortDirection":"Asc",
+		"totalNoOfRecords":125
+	},
+	"totalMerchantProfiles":155,
+	"totalActive":100,
+	"totalInProgress":25,
+	"totalCancelled":20,
+	"totalClosed":10
+}

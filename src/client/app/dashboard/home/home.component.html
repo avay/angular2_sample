@@ -1,0 +1,8 @@
+<div class="container-fluid">
+	<h2 class="text-muted">
+		Dashboard <small>Statistics Overview</small>
+	</h2>
+
+	<div *ngFor="let name of names | async" (click)="getNames()" class="search-result">{{name}}</div>
+	
+</div>

@@ -1,0 +1,42 @@
+<top-nav></top-nav>
+<sidebar-cmp></sidebar-cmp>
+<section class="main-container" [ngClass]="{sidebarPushRight: isActive}">
+	<router-outlet></router-outlet>
+	<!-- Page Heading -->
+	<div class="row">
+		<div class="col-xl-12">
+			<ol class="breadcrumb">
+				<li><a routerLink="/dashboard/home">Merchants</a></li>
+			</ol>
+		</div>
+		<button type="button" class="btn btn-sm btn-primary" routerLink="/dashboard/merchant-onboarding">Add Merchant</button>
+	</div>
+	<div class="card card-block">
+		<div><p>totalMerchantProfiles={{MerchantSearchRes?.totalMerchantProfiles}}</p></div>
+		<div><p>totalActive={{MerchantSearchRes?.totalActive}}</p></div>
+		<div><p>totalInProgress={{MerchantSearchRes?.totalInProgress}}</p></div>
+		<div><p>totalCancelled={{MerchantSearchRes?.totalCancelled}}</p></div>
+    </div>
+	
+	
+	<div class="card card-block">
+		<div class="table-responsive">
+			<table class="table table-hover table-striped">
+				<thead>
+					<tr>
+						<th>Merchant Id</th>
+						<th>DBA Name</th>
+						<th>Legal Name</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr *ngFor="let merchant of MerchantSearchRes?.merchants">
+						<td>{{merchant.mid}}</td>
+						<td>{{merchant.dbaName}}</td>
+						<td>{{merchant.legalName}}</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</section>

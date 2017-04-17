@@ -1,0 +1,76 @@
+<div class="container-fluid">
+	<!-- Page Heading -->
+	<div class="row">
+		<div class="col-xl-12">
+			<ol class="breadcrumb">
+				<li><a routerLink="/dashboard/home">Merchant</a></li>
+				<li class="active">Add</li>
+			</ol>
+			<h3 class="page-header">Merchant</h3>
+			<h5>Add Merchant</h5>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-3">
+			<div class="card card-default">
+				<!-- /.card-header -->
+				<merchant-onboarding-sub-nav></merchant-onboarding-sub-nav>
+				<!-- 
+                <notifications-cmp></notifications-cmp>
+                 -->
+				<!-- /.card-body -->
+			</div>
+			<!-- /.card -->
+			<!-- 
+            <chat-cmp></chat-cmp>
+             -->
+			<!-- /.card .chat-card -->
+			<label>Complition Status</label>
+			<progress class="progress" max="100" value="25">
+				<div class="progress">
+					<span class="progress-bar" style="width: 25%;">25%</span>
+				</div>
+			</progress>
+		</div>
+		<div class="col-lg-9">
+			<form role="form">
+				<div class="row">
+					<div class="col-lg-6">
+						<fieldset class="form-group">
+							<label>Contact Name</label> <input class="form-control" placeholder="Contact Name">
+						</fieldset>
+						<fieldset class="form-group">
+							<label>City</label> <input class="form-control" placeholder="City">
+						</fieldset>
+						<fieldset class="form-group">
+							<label>Country</label> <input class="form-control" placeholder="Country">
+						</fieldset>
+						<fieldset class="form-group">
+							<label>Business Phone</label> <input class="form-control" placeholder="Business Phone">
+						</fieldset>
+						<fieldset class="form-group">
+							<label>Business Fax (Optional)</label> <input class="form-control" placeholder="Business Fax">
+						</fieldset>
+					</div>
+					<div class="col-lg-6">
+						<fieldset class="form-group">
+							<label>Street Address</label> <input class="form-control" placeholder="Street Address">
+						</fieldset>
+						<fieldset class="form-group">
+							<label>State</label> <input class="form-control" placeholder="State">
+						</fieldset>
+						<fieldset class="form-group">
+							<label>PIN Code</label> <input class="form-control" placeholder="PIN Code">
+						</fieldset>
+						<fieldset class="form-group">
+							<label>Mobile Number</label> <input class="form-control" placeholder="Mobile Number (Optional)">
+						</fieldset>
+						<fieldset class="form-group">
+							<label>Merchant Zone</label> <input class="form-control" placeholder="Merchant Zone">
+						</fieldset>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
